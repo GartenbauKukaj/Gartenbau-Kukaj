@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gartenbau Kukaj – Garten & Landschaft</title>
+  <meta name="description" content="Gartenbau Kukaj – Rasenpflege, Unkrautentfernung, Heckenschneiden, Laubbeseitigung & Winterdienst im Landkreis Lörrach & Waldshut">
+  <style>
+    :root{--green:#2f6b3f;--light:#eaf5ea;--dark:#12321a;font-family:Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+    *{box-sizing:border-box}
+    body{margin:0;color:var(--dark);background:linear-gradient(180deg,#f7fbf7,#ffffff);-webkit-font-smoothing:antialiased}
+    .container{max-width:980px;padding:28px;margin:0 auto}
+    header{display:flex;align-items:center;gap:18px;padding:18px 0}
+    .logo{width:84px;height:84px;flex:0 0 84px;border-radius:8px;overflow:hidden;background:white;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(18,50,26,0.08)}
+    .logo img{max-width:100%;height:auto;display:block}
+    h1{font-size:1.8rem;margin:0;color:var(--green);letter-spacing:0.6px}
+    p.lead{margin:6px 0 0;color:#385e40}
+
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;padding:18px;background:linear-gradient(90deg, rgba(47,107,63,0.06), rgba(234,245,234,0.6));border-radius:12px}
+    .slogan{font-weight:600;font-size:1.05rem}
+
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
+    .card{background:white;border-radius:10px;padding:16px;box-shadow:0 8px 20px rgba(18,50,26,0.04)}
+    .card h3{margin:0 0 8px;font-size:1.05rem;color:var(--green)}
+    ul.services{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+    ul.services li{padding:8px 10px;border-radius:8px;background:var(--light);border:1px solid rgba(47,107,63,0.06)}
+
+    .contact a{display:inline-block;margin-top:8px;text-decoration:none;color:var(--green);font-weight:600}
+    .contact .tel{font-size:1.2rem}
+
+    footer{margin-top:20px;text-align:center;color:#6a795f;font-size:0.95rem}
+
+    @media(min-width:800px){
+      .hero{grid-template-columns:1fr 320px}
+      .grid{grid-template-columns:2fr 1fr}
+    }
+
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--green);color:white;text-decoration:none;font-weight:700}
+
+    .badge{font-size:0.85rem;padding:6px 8px;border-radius:999px;background:rgba(47,107,63,0.08);color:var(--green);display:inline-block}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo" aria-hidden="true">
+        <img src="logo.png" alt="Gartenbau Kukaj Logo">
+      </div>
+      <div>
+        <h1>Gartenbau Kukaj</h1>
+        <p class="lead">Ihr Partner für Garten &amp; Landschaft – Landkreis Lörrach &amp; Landkreis Waldshut</p>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <p class="slogan">Professionelle Pflege für Ihren Garten — schnell, zuverlässig und termingerecht.</p>
+        <p style="margin-top:12px;">Wir kümmern uns um Rasen, Hecken und den gesamten Außenbereich — damit Ihr Garten das ganze Jahr über gepflegt aussieht.</p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Unsere Leistungen</h3>
+            <ul class="services">
+              <li>Rasenpflege</li>
+              <li>Unkrautentfernung</li>
+              <li>Heckenschneiden</li>
+              <li>Laubbeseitigung</li>
+              <li>Winterdienst</li>
+            </ul>
+          </div>
+
+          <div class="card contact">
+            <h3>Kontakt</h3>
+            <div class="tel"><a class="tel" href="tel:+4915737629579">01573 7629579</a></div>
+            <div style="margin-top:6px;"><a href="mailto:info@gartenbau-kukaj.de">info@gartenbau-kukaj.de</a></div>
+            <div style="margin-top:10px" class="badge">Einsatz: Landkreis Lörrach &amp; Landkreis Waldshut</div>
+
+            <div style="margin-top:14px">
+              <a class="btn" href="tel:+4915737629579">Anrufen</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <aside style="padding:12px;display:flex;align-items:center;justify-content:center">
+        <div style="text-align:center">
+          <img src="logo.png" alt="Logo" style="max-width:200px;opacity:0.95;margin-bottom:8px">
+          <p style="font-size:0.95rem;color:#35593f;margin:0">Zuverlässig — Kompetent — Regional</p>
+        </div>
+      </aside>
+    </section>
+
+    <section style="margin-top:18px">
+      <div class="card">
+        <h3>So funktioniert's</h3>
+        <ol style="margin:0;padding-left:20px">
+          <li>Kontakt aufnehmen per Telefon oder E‑Mail</li>
+          <li>Kostenloser Besichtigungstermin (wenn nötig)</li>
+          <li>Terminvereinbarung — wir kommen pünktlich</li>
+        </ol>
+      </div>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> Gartenbau Kukaj — Impressum & Datenschutz auf Anfrage
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
